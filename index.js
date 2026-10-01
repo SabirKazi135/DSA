@@ -1,9 +1,11 @@
-const arr = [10, 20, 30];
+const arr = [10, 5, 8, 10, 3, 10];
 
-arr[arr.length] = 40;
+let times = 0;
+let check = 10;
+for (let i = 0; i < arr.length; i++) {
+  if (check == arr[i]) {
+    times++;
+  }
+}
 
-console.log(arr);
-
-arr.length = arr.length - 1;
-
-console.log(arr);
+console.log(times);

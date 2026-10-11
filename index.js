@@ -1,17 +1,8 @@
-function removeDuplicates(arr) {
-  let left = 0;
-  let right = 1;
-  while (right <= arr.length - 1) {
-    if (arr[left] === arr[right]) {
-      right++;
-    } else {
-      left++;
-      arr[left] = arr[right];
-      right++;
-    }
-  }
-  arr.length = left + 1;
-  return arr;
+const numbers = [4, 7, 4, 2, 7, 4];
+
+function countFrequencies(arr) {
+  const counts = new Map();
+  
 }
 
-console.log(removeDuplicates([1, 1, 2, 3, 3, 4, 4, 4, 5, 6, 7, 8]));
+console.log(countFrequencies(numbers));
